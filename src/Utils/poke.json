@@ -1,0 +1,24 @@
+{
+  "pokemon": [
+    {
+      "id": "#001",
+      "name": "Bulbasaur",
+      "image": "images/bulbasaur",
+      "type1": "Grass",
+      "type2": "Poison",
+      "weight": "6,9 kg",
+      "height": "0,7 m",
+      "move1": "Chlorophyll",
+      "move2": "Overgrow",
+      "description": "There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.",
+      "baseStats": {
+        "hp": "045",
+        "atk": "049",
+        "def": "049",
+        "satk": "065",
+        "sdef": "065",
+        "spd": "065"
+      }
+    }
+  ]
+}
