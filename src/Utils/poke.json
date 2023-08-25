@@ -3,7 +3,7 @@
     {
       "id": "#001",
       "name": "Bulbasaur",
-      "image": "images/bulbasaur",
+      "image": "/images/Bulbasaur.svg",
       "type1": "Grass",
       "type2": "Poison",
       "weight": "6,9 kg",
@@ -18,6 +18,164 @@
         "satk": "065",
         "sdef": "065",
         "spd": "065"
+      }
+    },
+    {
+      "id": "#004",
+      "name": "Charmander",
+      "image": "/images/Charmander.svg",
+      "type1": "Fire",
+      "weight": "8,5 kg",
+      "height": "0,6 m",
+      "move1": "Mega-Punch",
+      "move2": "Fire-Punch",
+      "description": "It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.",
+      "baseStats": {
+        "hp": "039",
+        "atk": "052",
+        "def": "043",
+        "satk": "060",
+        "sdef": "050",
+        "spd": "065"
+      }
+    },
+    {
+      "id": "#007",
+      "name": "Squirtle",
+      "image": "/images/Squirtle.svg",
+      "type1": "Water",
+      "weight": "9,0 kg",
+      "height": "0,5 m",
+      "move1": "Torrent",
+      "move2": "Rain-Dish",
+      "description": "When it retracts its long neck into its Shell, it squirts out water with vigorous force.",
+      "baseStats": {
+        "hp": "044",
+        "atk": "048",
+        "def": "065",
+        "satk": "050",
+        "sdef": "064",
+        "spd": "043"
+      }
+    },
+    {
+      "id": "#0012",
+      "name": "Butterfree",
+      "image": "/images/Butterfree.svg",
+      "type1": "Bug",
+      "type2": "Flying",
+      "weight": "32,0 kg",
+      "height": "1,1 m",
+      "move1": "Compound",
+      "move2": "Tinted-lens",
+      "description": "In batle, it faps its wings at great speed to release highl toxic dust into tne air.",
+      "baseStats": {
+        "hp": "060",
+        "atk": "045",
+        "def": "050",
+        "satk": "095",
+        "sdef": "080",
+        "spd": "070"
+      }
+    },
+    {
+      "id": "#025",
+      "name": "Pikachu",
+      "image": "/images/Pikachu.svg",
+      "type1": "Electric",
+      "type2": "",
+      "weight": "6.0 kg",
+      "height": "0,4 m",
+      "move1": "Mega-Punch",
+      "move2": "Pay-Day",
+      "description": "Pikochu that can generate powerful electricity have cheek socs that are extra soft and super stretchy.",
+      "baseStats": {
+        "hp": "035",
+        "atk": "055",
+        "def": "040",
+        "satk": "050",
+        "sdef": "050",
+        "spd": "050"
+      }
+    },
+    {
+      "id": "#092",
+      "name": "Gastly",
+      "image": "/images/Gastly.svg",
+      "type1": "Ghost",
+      "type2": "Poison",
+      "weight": "0,1 kg",
+      "height": "1,3 m",
+      "move1": "Levtate",
+      "move2": "",
+      "description": "Born from gases, anyone would faint if engufed by its gaseous body, which contains poison",
+      "baseStats": {
+        "hp": "030",
+        "atk": "035",
+        "def": "030",
+        "satk": "100",
+        "sdef": "035",
+        "spd": "080"
+      }
+    },
+    {
+      "id": "#132",
+      "name": "Ditto",
+      "image": "/images/Ditto.svg",
+      "type1": "Normal",
+      "type2": "",
+      "weight": "4,0 kg",
+      "height": "0,3 m",
+      "move1": "Limber",
+      "move2": "Imposter",
+      "description": "It can reconstitute its entire cellular structure to change ito what it sees, but it returns to normal when it relaxes.",
+      "baseStats": {
+        "hp": "048",
+        "atk": "048",
+        "def": "048",
+        "satk": "048",
+        "sdef": "048",
+        "spd": "048"
+      }
+    },
+    {
+      "id": "#152",
+      "name": "Mew",
+      "image": "/images/Mew.svg",
+      "type1": "Psychic",
+      "type2": "",
+      "weight": "4,0 kg",
+      "height": "0,4 m",
+      "move1": "Synchronize",
+      "move2": "",
+      "description": "When viewed through a microscope, this pokémon´s short, fine, delicate hair can be seen.",
+      "baseStats": {
+        "hp": "100",
+        "atk": "100",
+        "def": "100",
+        "satk": "100",
+        "sdef": "100",
+        "spd": "100"
+      }
+    },
+    {
+      "id": "#304",
+      "name": "Aron",
+      "image": "/images/Aron.svg",
+      "type1": "Steel",
+      "type2": "Rock",
+      "weight": "60,0 kg",
+      "height": "0,4 m",
+      "move1": "Sturdy",
+      "move2": "Rock-head",
+      "description": "It eats iron are - and sometimes railroad tracks - to build up the steel armor that protects its body.",
+      "baseStats": {
+        "hp": "050",
+        "atk": "070",
+        "def": "100",
+        "satk": "040",
+        "sdef": "040",
+        "spd": "030"
       }
     }
   ]

@@ -1,8 +1,10 @@
-import React from 'react'
+import Cards from '../Components/Cards/Cards'
 
 function Home() {
   return (
-    <div>Home</div>
+    <div>
+      <Cards></Cards>
+    </div>
   )
 }
 
