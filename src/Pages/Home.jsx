@@ -1,9 +1,11 @@
-import Cards from '../Components/Cards/Cards'
+
+import SearchBar from '../Components/Header/SearchBar'
 
 function Home() {
   return (
     <div>
-      <Cards></Cards>
+      <SearchBar></SearchBar>
+ 
     </div>
   )
 }

@@ -1,0 +1,448 @@
+.body-card-bg{
+    padding: 4px;
+    background: url(/icons/pokeball.svg);
+    background-position: 95% 2%;
+    background-repeat: no-repeat;
+    background-size: 230px;
+    margin-bottom: 1rem;
+  
+}
+
+
+/* FIRST SECTION */
+
+.first-section{
+    display: flex;
+    justify-content: stretch;
+    height: 52px;
+    padding-top: 1rem;
+    width: 100%;
+    margin-bottom: 12rem;
+}
+
+.first-section img{
+    width: 2rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    height: 50px;
+}
+
+.first-section h1{
+    color: white;
+    margin: 0;
+   display: flex;
+   align-items: center;
+   padding-left: 1rem;
+   height: 50px;
+   width: 70%;
+}
+
+.first-section p{
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 auto;
+    margin: 0;
+    height: 50px;
+}
+
+.detailing-body{
+    position: relative;
+}
+
+/* CARROUSEL SECTION */
+
+.carrousel-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 0.5rem;
+    position: absolute;
+    bottom: 4rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* DETAILS STATS */
+
+.details-stats{
+    background-color: #FFFFFF;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 1px 3px 1px #666666;
+}
+
+.type-stats{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 3rem 0 1rem 0;
+}
+
+.type-stats .types{
+    color: #FFFFFF !important;
+    border-radius: 2rem;
+    padding: 1px 12px;
+    height: 20px;
+    font-size: 12px;
+}
+
+.type-stats .type2{
+    color: #FFFFFF !important;
+    border-radius: 2rem;
+    padding: 1px 12px;
+    height: 20px;
+    font-size: 12px;
+}
+
+.detailing-body .class-about{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+}
+
+/* DIMENSION POKEMON (WEIGHT, HEIGHT, MOVES) */
+
+.dimension-poke{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 0 2rem;
+}
+
+.dimension-poke p{
+    font-size: 12px;
+    opacity: 75%;
+}
+
+.dimension-poke .first-props, .second-props, .three-props{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    gap:2px;
+}
+
+.dimension-poke img{
+    width: 30px;
+    height: 30px;
+    padding-right: 5px;
+}
+
+.dimension-poke .second-props img{
+    transform: rotate(90deg)
+}
+
+.dimension-poke h5{
+    display: flex;
+    align-items: center;
+}
+
+ .dimension-poke hr{
+    height: 64px;
+    width: 3px;
+    border-width:0;
+    color:#000;
+    background-color:#000;
+    opacity: 25%;
+}
+
+.dimension-poke .three-props p{
+    display: flex;
+    justify-content: center;
+    width: 75%;
+}
+
+.description-section {
+    padding: 1.5rem;
+    display: flex;
+    text-align: justify;
+}
+
+/* BASE STATS */
+
+.stats-title{
+    display: flex;
+    justify-content: center;
+}
+
+progress[value]{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+}
+
+
+.progress-bar{
+    display: flex;
+    text-align: end;
+    padding: 2rem 0.5rem;
+}
+
+.progress-bar hr{
+    height: 100px;
+    width: 2px;
+    border-width:0;
+    color:#000;
+    background-color:#000;
+    opacity: 25%;
+}
+
+.progress-bar h5{
+    padding-right: 1rem;
+}
+
+.progress-bar p{
+    padding-left: 1rem;
+    font-size: 14px;
+    opacity: 90%;
+}
+
+.progress-porcent-bar{
+    display: flex;
+    align-items: center;
+}
+
+.container-porcent-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.porcent-bar{
+    width: 210px;
+    height: 7px;
+    background-color: #ccc;
+    border-radius: 2rem;
+    overflow: hidden;
+    margin-left: 1rem;
+}
+
+/*  TIPOS DE POKEMON */
+
+.Bug, .Bug progress[value]::-webkit-progress-value {
+    background-color: #A7B723;
+}
+
+.Bug progress[value]::-moz-progress-bar{
+    background-color: #A7B723;
+}
+
+.Bug h3, .Bug h5{
+    color: #A7B723;
+}
+
+.Dark, .Dark progress[value]::-webkit-progress-value {
+    background-color: #75574C;
+}
+
+.Dark progress[value]::-moz-progress-bar{
+    background-color: #75574C;
+}
+
+.Dark h3, .Dark h5{
+    color: #75574C;
+}
+
+.Dragon, .Dragon progress[value]::-webkit-progress-value{
+   background-color: #7037FF; 
+}
+
+.Dragon progress[value]::-moz-progress-bar{
+    background-color: #7037FF; 
+}
+
+
+.Dragon h3, .Dragon h5{
+    color: #7037FF;
+}
+
+.Electric, .Electric progress[value]::-webkit-progress-value{
+    background-color: #F9CF30;
+}
+
+.Electric progress[value]::-moz-progress-bar{
+    background-color: #F9CF30;
+}
+
+.Electric h3, .Electric h5{
+    color: #F9CF30;
+}
+
+.Fairy, .Fairy progress[value]::-webkit-progress-value {
+    background-color: #E69EAC;
+}
+
+.Fairy progress[value]::-moz-progress-bar{
+    background-color: #E69EAC;
+}
+
+.Fairy h3, .Fairy h5{
+    color: #E69EAC;
+}
+
+.Fighting, .Fighting progress[value]::-webkit-progress-value {
+    background-color: #C12239;
+}
+
+.Fighting progress[value]::-moz-progress-bar{
+    background-color: #C12239;
+}
+
+.Fighting h3, .Fighting h5{
+    color: #C12239;
+}
+
+.Fire, .Fire progress[value]::-webkit-progress-value {
+    background-color: #F57D31;
+}
+
+.Fire progress[value]::-moz-progress-bar{
+    background-color: #F57D31;
+}
+
+.Fire h3, .Fire h5{
+    color: #F57D31;
+}
+
+.Flying, .Flying progress[value]::-webkit-progress-value {
+    background-color: #A891EC;
+}
+
+.Flying progress[value]::-moz-progress-bar{
+    background-color: #A891EC;
+}
+
+.Flying h3, .Flying h5{
+    color: #A891EC;
+}
+
+.Ghost, .Ghost progress[value]::-webkit-progress-value {
+    background-color: #70559B;
+}
+
+.Ghost progress[value]::-moz-progress-bar{
+    background-color: #70559B;
+}
+
+.Ghost h3, .Ghost h5{
+    color: #70559B;
+}
+
+.Normal, .Normal progress[value]::-webkit-progress-value {
+    background-color: #AAA67F;
+}
+
+.Normal progress[value]::-moz-progress-bar{
+    background-color: #AAA67F;
+}
+
+.Normal h3, .Normal h5{
+    color: #AAA67F;
+}
+
+.Grass, .Grass progress[value]::-webkit-progress-value {
+    background-color: #74CB48;
+    
+}
+
+.Grass progress[value]::-moz-progress-bar{
+    background-color: #74CB48;
+}
+
+.Grass h3, .Grass h5{
+    color:#74CB48;
+}
+
+.Ground, .Ground progress[value]::-webkit-progress-value {
+    background-color: #DEC16B;
+}
+
+.Ground progress[value]::-moz-progress-bar{
+    background-color: #DEC16B;
+}
+
+.Ground h3, .Ground h5{
+    color: #DEC16B;
+}
+
+.Ice, .Ice progress[value]::-webkit-progress-value {
+    background-color: #9AD6DF;
+}
+
+.Ice progress[value]::-moz-progress-bar{
+    background-color: #9AD6DF;
+}
+
+.Ice h3, .Ice h5{
+    color: #9AD6DF;
+}
+
+.Poison, .Poison progress[value]::-webkit-progress-value {
+    background-color: #A43E9E;
+}
+
+.Poison progress[value]::-moz-progress-bar{
+    background-color: #A43E9E;
+}
+
+.Poison h3, .Poison h5{
+    color: #A43E9E;
+}
+
+.Psychic, .Psychic progress[value]::-webkit-progress-value {
+    background-color: #FB5584;
+    
+}
+
+.Psychic progress[value]::-moz-progress-bar{
+    background-color: #FB5584;
+}
+
+.Psychic h3, .Psychic h5{
+    color: #FB5584;
+    
+}
+
+.Rock, .Rock progress[value]::-webkit-progress-value {
+    background-color: #B69E31;
+}
+
+.Rock progress[value]::-moz-progress-bar{
+    background-color: #B69E31;
+}
+
+.Rock h3, .Rock h5{
+    color: #B69E31;
+}
+
+.Steel, .Steel progress[value]::-webkit-progress-value {
+    background-color: #B7B9D0;
+}
+
+.Steel progress[value]::-moz-progress-bar{
+    background-color: #B7B9D0;
+}
+
+.Steel h3, .Steel h5{
+    color: #B7B9D0;
+}
+
+.Water, .Water progress[value]::-webkit-progress-value {
+    background-color: #6493EB;
+}
+
+.Water progress[value]::-moz-progress-bar{
+    background-color: #6493EB;
+}
+
+.Water h3, .Water h5{
+    color: #6493EB;
+}
+
+
