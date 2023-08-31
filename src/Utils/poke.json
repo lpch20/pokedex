@@ -1,7 +1,8 @@
 {
   "pokemon": [
     {
-      "id": "#001",
+      "nextid": "004",
+      "id": "001",
       "name": "Bulbasaur",
       "image": "/images/Bulbasaur.svg",
       "type1": "Grass",
@@ -21,7 +22,9 @@
       }
     },
     {
-      "id": "#004",
+      "previd": "001",
+      "nextid": "007",
+      "id": "004",
       "name": "Charmander",
       "image": "/images/Charmander.svg",
       "type1": "Fire",
@@ -40,7 +43,9 @@
       }
     },
     {
-      "id": "#007",
+      "previd": "004",
+      "nextid": "012",
+      "id": "007",
       "name": "Squirtle",
       "image": "/images/Squirtle.svg",
       "type1": "Water",
@@ -59,7 +64,9 @@
       }
     },
     {
-      "id": "#0012",
+      "previd": "007",
+      "nextid": "025",
+      "id": "012",
       "name": "Butterfree",
       "image": "/images/Butterfree.svg",
       "type1": "Bug",
@@ -79,7 +86,9 @@
       }
     },
     {
-      "id": "#025",
+      "previd": "012",
+      "nextid": "092",
+      "id": "025",
       "name": "Pikachu",
       "image": "/images/Pikachu.svg",
       "type1": "Electric",
@@ -99,7 +108,9 @@
       }
     },
     {
-      "id": "#092",
+      "previd": "025",
+      "nextid": "132",
+      "id": "092",
       "name": "Gastly",
       "image": "/images/Gastly.svg",
       "type1": "Ghost",
@@ -119,7 +130,9 @@
       }
     },
     {
-      "id": "#132",
+      "previd": "092",
+      "nextid": "152",
+      "id": "132",
       "name": "Ditto",
       "image": "/images/Ditto.svg",
       "type1": "Normal",
@@ -139,7 +152,9 @@
       }
     },
     {
-      "id": "#152",
+      "previd": "132",
+      "nextid": "304",
+      "id": "152",
       "name": "Mew",
       "image": "/images/Mew.svg",
       "type1": "Psychic",
@@ -159,7 +174,8 @@
       }
     },
     {
-      "id": "#304",
+      "previd": "152",
+      "id": "304",
       "name": "Aron",
       "image": "/images/Aron.svg",
       "type1": "Steel",

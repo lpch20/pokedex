@@ -1,6 +1,6 @@
 .body-card-bg{
     padding: 4px;
-    background: url(../../../public/icons/pokeball.svg);
+    background: url(/icons/pokeball.svg);
     background-position: 95% 2%;
     background-repeat: no-repeat;
     background-size: 230px;
@@ -225,7 +225,11 @@ progress[value]{
 
 /*  TIPOS DE POKEMON */
 
-.Bug, .Bug progress[value]::-webkit-progress-value, .Bug progress[value]::-moz-progress-bar{
+.Bug, .Bug progress[value]::-webkit-progress-value {
+    background-color: #A7B723;
+}
+
+.Bug progress[value]::-moz-progress-bar{
     background-color: #A7B723;
 }
 
@@ -233,7 +237,11 @@ progress[value]{
     color: #A7B723;
 }
 
-.Dark, .Dark progress[value]::-webkit-progress-value, .Dark progress[value]::-moz-progress-bar{
+.Dark, .Dark progress[value]::-webkit-progress-value {
+    background-color: #75574C;
+}
+
+.Dark progress[value]::-moz-progress-bar{
     background-color: #75574C;
 }
 
@@ -241,15 +249,24 @@ progress[value]{
     color: #75574C;
 }
 
-.Dragon, .Dragon progress[value]::-webkit-progress-value, .Dragon progress[value]::-moz-progress-bar{
+.Dragon, .Dragon progress[value]::-webkit-progress-value{
    background-color: #7037FF; 
 }
+
+.Dragon progress[value]::-moz-progress-bar{
+    background-color: #7037FF; 
+}
+
 
 .Dragon h3, .Dragon h5{
     color: #7037FF;
 }
 
-.Electric, .Electric progress[value]::-webkit-progress-value, .Electric progress[value]::-moz-progress-bar {
+.Electric, .Electric progress[value]::-webkit-progress-value{
+    background-color: #F9CF30;
+}
+
+.Electric progress[value]::-moz-progress-bar{
     background-color: #F9CF30;
 }
 
@@ -257,7 +274,11 @@ progress[value]{
     color: #F9CF30;
 }
 
-.Fairy, .Fairy progress[value]::-webkit-progress-value, .Fairy progress[value]::-moz-progress-bar{
+.Fairy, .Fairy progress[value]::-webkit-progress-value {
+    background-color: #E69EAC;
+}
+
+.Fairy progress[value]::-moz-progress-bar{
     background-color: #E69EAC;
 }
 
@@ -265,7 +286,11 @@ progress[value]{
     color: #E69EAC;
 }
 
-.Fighting, .Fighting progress[value]::-webkit-progress-value, .Fighting progress[value]::-moz-progress-bar{
+.Fighting, .Fighting progress[value]::-webkit-progress-value {
+    background-color: #C12239;
+}
+
+.Fighting progress[value]::-moz-progress-bar{
     background-color: #C12239;
 }
 
@@ -273,7 +298,11 @@ progress[value]{
     color: #C12239;
 }
 
-.Fire, .Fire progress[value]::-webkit-progress-value, .Fire progress[value]::-moz-progress-bar{
+.Fire, .Fire progress[value]::-webkit-progress-value {
+    background-color: #F57D31;
+}
+
+.Fire progress[value]::-moz-progress-bar{
     background-color: #F57D31;
 }
 
@@ -281,7 +310,11 @@ progress[value]{
     color: #F57D31;
 }
 
-.Flying, .Flying progress[value]::-webkit-progress-value, .Flying progress[value]::-moz-progress-bar{
+.Flying, .Flying progress[value]::-webkit-progress-value {
+    background-color: #A891EC;
+}
+
+.Flying progress[value]::-moz-progress-bar{
     background-color: #A891EC;
 }
 
@@ -289,7 +322,11 @@ progress[value]{
     color: #A891EC;
 }
 
-.Ghost, .Ghost progress[value]::-webkit-progress-value, .Ghost progress[value]::-moz-progress-bar{
+.Ghost, .Ghost progress[value]::-webkit-progress-value {
+    background-color: #70559B;
+}
+
+.Ghost progress[value]::-moz-progress-bar{
     background-color: #70559B;
 }
 
@@ -297,7 +334,11 @@ progress[value]{
     color: #70559B;
 }
 
-.Normal, .Normal progress[value]::-webkit-progress-value, .Normal progress[value]::-moz-progress-bar{
+.Normal, .Normal progress[value]::-webkit-progress-value {
+    background-color: #AAA67F;
+}
+
+.Normal progress[value]::-moz-progress-bar{
     background-color: #AAA67F;
 }
 
@@ -305,16 +346,24 @@ progress[value]{
     color: #AAA67F;
 }
 
-.Grass, .Grass progress[value]::-webkit-progress-value, .Grass progress[value]::-moz-progress-bar{
+.Grass, .Grass progress[value]::-webkit-progress-value {
     background-color: #74CB48;
     
+}
+
+.Grass progress[value]::-moz-progress-bar{
+    background-color: #74CB48;
 }
 
 .Grass h3, .Grass h5{
     color:#74CB48;
 }
 
-.Ground, .Ground progress[value]::-webkit-progress-value, .Ground progress[value]::-moz-progress-bar{
+.Ground, .Ground progress[value]::-webkit-progress-value {
+    background-color: #DEC16B;
+}
+
+.Ground progress[value]::-moz-progress-bar{
     background-color: #DEC16B;
 }
 
@@ -322,7 +371,11 @@ progress[value]{
     color: #DEC16B;
 }
 
-.Ice, .Ice progress[value]::-webkit-progress-value, .Ice progress[value]::-moz-progress-bar{
+.Ice, .Ice progress[value]::-webkit-progress-value {
+    background-color: #9AD6DF;
+}
+
+.Ice progress[value]::-moz-progress-bar{
     background-color: #9AD6DF;
 }
 
@@ -330,7 +383,11 @@ progress[value]{
     color: #9AD6DF;
 }
 
-.Poison, .Poison progress[value]::-webkit-progress-value, .Poison progress[value]::-moz-progress-bar{
+.Poison, .Poison progress[value]::-webkit-progress-value {
+    background-color: #A43E9E;
+}
+
+.Poison progress[value]::-moz-progress-bar{
     background-color: #A43E9E;
 }
 
@@ -338,9 +395,13 @@ progress[value]{
     color: #A43E9E;
 }
 
-.Psychic, .Psychic progress[value]::-webkit-progress-value, .Psychic progress[value]::-moz-progress-bar{
+.Psychic, .Psychic progress[value]::-webkit-progress-value {
     background-color: #FB5584;
     
+}
+
+.Psychic progress[value]::-moz-progress-bar{
+    background-color: #FB5584;
 }
 
 .Psychic h3, .Psychic h5{
@@ -348,7 +409,11 @@ progress[value]{
     
 }
 
-.Rock, .Rock progress[value]::-webkit-progress-value, .Rock progress[value]::-moz-progress-bar{
+.Rock, .Rock progress[value]::-webkit-progress-value {
+    background-color: #B69E31;
+}
+
+.Rock progress[value]::-moz-progress-bar{
     background-color: #B69E31;
 }
 
@@ -356,7 +421,11 @@ progress[value]{
     color: #B69E31;
 }
 
-.Steel, .Steel progress[value]::-webkit-progress-value, .Steel progress[value]::-moz-progress-bar{
+.Steel, .Steel progress[value]::-webkit-progress-value {
+    background-color: #B7B9D0;
+}
+
+.Steel progress[value]::-moz-progress-bar{
     background-color: #B7B9D0;
 }
 
@@ -364,7 +433,11 @@ progress[value]{
     color: #B7B9D0;
 }
 
-.Water, .Water progress[value]::-webkit-progress-value, .Water progress[value]::-moz-progress-bar{
+.Water, .Water progress[value]::-webkit-progress-value {
+    background-color: #6493EB;
+}
+
+.Water progress[value]::-moz-progress-bar{
     background-color: #6493EB;
 }
 

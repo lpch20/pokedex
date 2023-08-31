@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Poppins:wght@200;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,500;1,600&family=Ubuntu:wght@300;400;500;700&display=swap%22");
+:root {
+  --color-fire: #f57d31;
+  --color-grass: #74cb48;
+  --color-steel: #b7b9d0;
+  --color-water: #6493eb;
+  --color-psychic: #fb5584;
+  --color-ground: #dec16b;
+  --color-ice: #9ad6df;
+  --color-flying: #a891ec;
+  --color-ghost: #70559b;
+  --color-normal: #aaa67f;
+  --color-poison: #a43e9e;
+  --color-rock: #b69e31;
+  --color-fighting: #c12239;
+  --color-dark: #75574c;
+  --color-bug: #a7b723;
+  --color-dragon: #7037ff;
+  --color-electric: #f9cf30;
+  --color-fairy: #e69eac;
+  --color-dark: #212121;
+  --color-medium: #666666;
+  --color-light: #e0e0e0;
+  --color-background: #efefef;
+  --color-white: #ffffff;
+  --color-primary: #dc0a2d;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";}
+.container {
+  margin: 0 auto;
+}
+
+.card-list-pokemon {
+  display: grid;
+  max-width: 390px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem 1rem;
+}
+
+main{
+  position: relative;
+}
+
+.card-pokemon {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.pokemon-id {
+  position: relative;
+  left: 35px;
+}
+
+.pokemon-id span {
+  font-size: 10px;
+  color: #666666;
+  display: inline-block;
+  text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.3);
+}
+.card-img {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 110px;
+  height: 110px;
+}
+
+.card-name {
+  font-weight: 400;
+  color: #212121;
+  font-size: 13px;
+  
+  width: 110px;
+  height: 50px;
+  border-radius: 8px;
+}
+
+.card-name p {
+  position: relative;
+  bottom:5px;
+  text-align: center;
+}
+
+.card-img img {
+  position: relative;
+  bottom: 5%;
+  width: 65%;
+  height: 65px;
+}
