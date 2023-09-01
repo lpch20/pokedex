@@ -36,7 +36,7 @@ function DetailsCard() {
     <div>
       <div key={pokemon.id} className={`body-card-bg ${pokemon.type1}`}>
         <div className="first-section">
-          <a><Link to="/"><img src="/icons/arrow_back.svg"></img></Link></a>
+          <a><Link to="/profile"><img src="/icons/arrow_back.svg"></img></Link></a>
           <h1>{pokemon.name}</h1>
           <p>#{pokemon.id}</p>
         </div>
