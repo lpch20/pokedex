@@ -11,7 +11,6 @@ function DetailsCard() {
     redirect: "follow",
   };
 
-
   const getPokemons = async () => {
     try {
       const response = await fetch(
@@ -36,7 +35,19 @@ function DetailsCard() {
     <div>
       <div key={pokemon.id} className={`body-card-bg ${pokemon.type1}`}>
         <div className="first-section">
-          <a><Link to="/profile"><img src="/icons/arrow_back.svg"></img></Link></a>
+          {!pokemon.previd ? (
+            <a>
+              <Link to={`/`}>
+                <img src="/icons/arrow_back.svg"></img>
+              </Link>
+            </a>
+          ) : (
+            <a>
+              <Link to={`/profile/${pokemon.previd}`}>
+                <img src="/icons/arrow_back.svg"></img>
+              </Link>
+            </a>
+          )}
           <h1>{pokemon.name}</h1>
           <p>#{pokemon.id}</p>
         </div>
@@ -44,7 +55,6 @@ function DetailsCard() {
           <div className="detailing-body">
             <div className="carrousel-section">
               <a
-          
                 href=""
                 style={{ visibility: !pokemon.previd ? "hidden" : "visible" }}
               >
@@ -54,7 +64,6 @@ function DetailsCard() {
               </a>
               <img src={pokemon.image}></img>
               <a
-            
                 href=""
                 style={{ visibility: !pokemon.nextid ? "hidden" : "visible" }}
               >
