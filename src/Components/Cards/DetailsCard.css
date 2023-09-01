@@ -4,10 +4,9 @@
     background-position: 95% 2%;
     background-repeat: no-repeat;
     background-size: 230px;
-    margin-bottom: 1rem;
+    height: 100vh
   
 }
-
 
 /* FIRST SECTION */
 
@@ -59,7 +58,7 @@
     align-items: center;
     padding-top: 0.5rem;
     position: absolute;
-    bottom: 4rem;
+    bottom: 5rem;
     width: 100%;
     cursor: pointer;
 }
@@ -114,8 +113,9 @@
 }
 
 .dimension-poke p{
-    font-size: 12px;
+    font-size: 10px;
     opacity: 75%;
+    color: #666666;
 }
 
 .dimension-poke .first-props, .second-props, .three-props{
@@ -161,6 +161,7 @@
     padding: 1.5rem;
     display: flex;
     text-align: justify;
+    font-size: 12px;
 }
 
 /* BASE STATS */
@@ -168,6 +169,17 @@
 .stats-title{
     display: flex;
     justify-content: center;
+}
+
+.progress-bar .progress-stats{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-stats p{
+    font-size: 13px !important;
 }
 
 progress[value]{
@@ -185,7 +197,7 @@ progress[value]{
 }
 
 .progress-bar hr{
-    height: 100px;
+    height: 130px;
     width: 2px;
     border-width:0;
     color:#000;
@@ -216,7 +228,7 @@ progress[value]{
 
 .porcent-bar{
     width: 210px;
-    height: 7px;
+    height: 9px;
     background-color: #ccc;
     border-radius: 2rem;
     overflow: hidden;

@@ -11,9 +11,6 @@ function DetailsCard() {
     redirect: "follow",
   };
 
-  const reloadPage = () => {
-    window.location.reload();
-  };
 
   const getPokemons = async () => {
     try {
@@ -30,7 +27,7 @@ function DetailsCard() {
 
   useEffect(() => {
     getPokemons();
-  }, []);
+  }, [id]);
 
   if (!pokemon) {
     return <h1>Loading...</h1>;
@@ -39,15 +36,15 @@ function DetailsCard() {
     <div>
       <div key={pokemon.id} className={`body-card-bg ${pokemon.type1}`}>
         <div className="first-section">
-          <img src="/icons/arrow_back.svg"></img>
+          <a><Link to="/"><img src="/icons/arrow_back.svg"></img></Link></a>
           <h1>{pokemon.name}</h1>
-          <p>{pokemon.id}</p>
+          <p>#{pokemon.id}</p>
         </div>
         <div className="details-stats">
           <div className="detailing-body">
             <div className="carrousel-section">
               <a
-                onClick={reloadPage}
+          
                 href=""
                 style={{ visibility: !pokemon.previd ? "hidden" : "visible" }}
               >
@@ -57,7 +54,7 @@ function DetailsCard() {
               </a>
               <img src={pokemon.image}></img>
               <a
-                onClick={reloadPage}
+            
                 href=""
                 style={{ visibility: !pokemon.nextid ? "hidden" : "visible" }}
               >
