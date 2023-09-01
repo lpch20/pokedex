@@ -1,9 +1,9 @@
-
+import "./Home.css"
 import SearchBar from '../Components/Header/SearchBar'
 
 function Home() {
   return (
-    <div>
+    <div className="main-container">
       <SearchBar></SearchBar>
  
     </div>

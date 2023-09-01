@@ -80,7 +80,7 @@ function SearchBar() {
   return (
     <div className="search-bar">
       <div className="pokedex-bar">
-        <img src="/icons/pokeball.svg" alt="" />
+        <img src="/icons/pokeballMain.svg" alt="" />
         <h1>Pokédex</h1>
       </div>
       <div className="bar-and-filter">
@@ -137,9 +137,8 @@ function SearchBar() {
           </div>
         ) : null}
       </div>
-      <div>
-        <Cards filterPokemon={filterPokemon} />
-      </div>
+      <Cards filterPokemon={filterPokemon} />
+      
     </div>
   );
 }

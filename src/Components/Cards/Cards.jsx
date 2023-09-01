@@ -36,7 +36,7 @@ function Cards({ filterPokemon }) {
             <Link to={`/profile/${pokemon.id}`}>
             <div className="card-img">
               <div className="pokemon-id">
-                <span>{pokemon.id}</span>
+                <span>#{pokemon.id}</span>
               </div>
               <img src={pokemon.image} alt="pokemon" />
               <div className="card-name">
