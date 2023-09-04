@@ -99,16 +99,22 @@ function SearchBar() {
               }
               if (e.target.value.length !== "") {
                 setClose(true);
-              } else if(e.target.value.length === "") {
+              } else if (e.target.value.length === "") {
                 setClose(false);
               }
             }}
           />
           {close && (
-            <button className="close" onClick={() => setPokeid("") || setPokename("")}>
-              {id &&(
-              <img src="/icons/close.svg" alt="" className="img-close" />
-            )}
+            <button
+              className="close"
+              onClick={() => setPokeid("") || setPokename("")}
+            >
+              {id && (
+                <img src="/icons/close.svg" alt="" className="img-close" />
+              )}
+              {name && (
+                <img src="/icons/close.svg" alt="" className="img-close" />
+              )}
             </button>
           )}
         </div>
