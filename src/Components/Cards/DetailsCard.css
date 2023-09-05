@@ -194,6 +194,7 @@ progress[value]{
     display: flex;
     text-align: end;
     padding: 2rem 0.5rem;
+    width: 100%;
 }
 
 .progress-bar hr{
@@ -224,6 +225,7 @@ progress[value]{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    width: 100%;
 }
 
 .porcent-bar{
@@ -457,4 +459,31 @@ progress[value]{
     color: #6493EB;
 }
 
+@media screen and (min-width: 768px){
+    
+    .porcent-bar{
+        width: 100%;
+    }
 
+    .container-porcent-bar{
+        width: 83%;
+    }
+
+    .progress-bar{
+       justify-content: center;
+       padding: 2rem 1rem;
+    }
+
+    .description-section {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .first-section p{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        padding-right: 4rem;
+    }
+
+}

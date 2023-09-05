@@ -126,6 +126,7 @@ function SearchBar() {
         </div>
 
         {click ? (
+          <div class="bg-modal">
           <div className="modal">
             <div className="title-sort">
               <h4>Sort by:</h4>
@@ -139,6 +140,7 @@ function SearchBar() {
                   value="Number"
                   checked={checked === "Number"}
                   onChange={() => handleCheck("Number")}
+                  onClick={handleClick}
                 />
                 <label htmlFor="input-number">Number</label>
               </div>
@@ -150,14 +152,16 @@ function SearchBar() {
                   value="Name"
                   checked={checked === "Name"}
                   onChange={() => handleCheck("Name")}
+                  onClick={handleClick}
                 />
                 <label htmlFor="input-name">Name</label>
               </div>
             </div>
           </div>
+          </div>
         ) : null}
       </div>
-      <Cards filterPokemon={filterPokemon} />
+      <Cards filterPokemon={filterPokemon} nameChecked={checked}/>
     </div>
   );
 }

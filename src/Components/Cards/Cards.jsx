@@ -3,7 +3,7 @@ import "./Cards.css";
 import "../../index.css";
 import { Link } from "react-router-dom";
 
-function Cards({ filterPokemon }) {
+function Cards({ filterPokemon, nameChecked }) {
   const [pokemons, setPokemons] = useState([]);
 
   var requestOptions = {
@@ -34,7 +34,10 @@ function Cards({ filterPokemon }) {
         <main key={pokemon.id} className="container">
           <a href="#" className="card-pokemon">
             <Link to={`/profile/${pokemon.id}`}>
-            <div className="card-img">
+            <div className={`card-img ${
+                  nameChecked === "Name" ? "card-img-name" : ""
+                }`}
+              >
               <div className="pokemon-id">
                 <span>#{pokemon.id}</span>
               </div>
