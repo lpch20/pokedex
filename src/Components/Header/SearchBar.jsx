@@ -1,6 +1,7 @@
 import Cards from "../Cards/Cards";
 import "./searchbar.css";
 import { useEffect, useState } from "react";
+
 import iconNumber from "/icons/tag.svg";
 import iconName from "/icons/text_format.svg";
 
@@ -12,6 +13,36 @@ function SearchBar() {
   const [click, setclick] = useState(false);
   const [checked, setChecked] = useState("Number");
   const [close, setClose] = useState(false);
+
+  // const searchBarRef = useRef(null);
+  // console.log(searchBarRef);
+
+  // const handleIntersection = (entries, observer) => {
+  //   entries.forEach((entry) => {
+  //     if (entry.isIntersecting) {
+  //       allPokemon;
+  //     } else {
+  //       console.log("chau");
+  //     }
+  //   });
+  // };
+
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(handleIntersection, {
+  //     threshold: 0.1, // Puedes ajustar este valor según tus necesidades
+  //   });
+
+  //   if (searchBarRef.current) {
+  //     observer.observe(searchBarRef.current);
+  //   }
+
+  //   // Cuando el componente se desmonta, deja de observar el elemento
+  //   return () => {
+  //     if (searchBarRef.current) {
+  //       observer.unobserve(searchBarRef.current);
+  //     }
+  //   };
+  // }, []);
 
   var requestOptions = {
     method: "GET",
@@ -126,42 +157,43 @@ function SearchBar() {
         </div>
 
         {click ? (
-          <div class="bg-modal">
-          <div className="modal">
-            <div className="title-sort">
-              <h4>Sort by:</h4>
-            </div>
-            <div className="modal-selection">
-              <div className="first-check">
-                <input
-                  id="input-number"
-                  type="radio"
-                  className="circular-checkbox"
-                  value="Number"
-                  checked={checked === "Number"}
-                  onChange={() => handleCheck("Number")}
-                  onClick={handleClick}
-                />
-                <label htmlFor="input-number">Number</label>
+          <div className="bg-modal">
+            <div className="modal">
+              <div className="title-sort">
+                <h4>Sort by:</h4>
               </div>
-              <div className="second-check">
-                <input
-                  id="input-name"
-                  type="radio"
-                  className="circular-checkbox"
-                  value="Name"
-                  checked={checked === "Name"}
-                  onChange={() => handleCheck("Name")}
-                  onClick={handleClick}
-                />
-                <label htmlFor="input-name">Name</label>
+              <div className="modal-selection">
+                <div className="first-check">
+                  <input
+                    id="input-number"
+                    type="radio"
+                    className="circular-checkbox"
+                    value="Number"
+                    checked={checked === "Number"}
+                    onChange={() => handleCheck("Number")}
+                    onClick={handleClick}
+                  />
+                  <label htmlFor="input-number">Number</label>
+                </div>
+                <div className="second-check">
+                  <input
+                    id="input-name"
+                    type="radio"
+                    className="circular-checkbox"
+                    value="Name"
+                    checked={checked === "Name"}
+                    onChange={() => handleCheck("Name")}
+                    onClick={handleClick}
+                  />
+                  <label htmlFor="input-name">Name</label>
+                </div>
               </div>
             </div>
-          </div>
           </div>
         ) : null}
       </div>
-      <Cards filterPokemon={filterPokemon} nameChecked={checked}/>
+      <Cards filterPokemon={filterPokemon} nameChecked={checked} />
+     
     </div>
   );
 }
