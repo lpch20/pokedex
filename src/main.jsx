@@ -8,11 +8,17 @@ import "./index.css";
 import Home from "./Pages/Home";
 import Profile from "./Pages/Profile";
 import ErrorPage from "./Pages/ErrorPage";
+import Login from "./Pages/Login";
 // import DetailsCard from "./Components/Cards/DetailsCard";
 
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <Login/>,
+    errorElement: <ErrorPage/>,
+  },
+  {
+    path: "/home",
     element: <Home/>,
     errorElement: <ErrorPage/>,
   },

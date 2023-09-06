@@ -38,7 +38,7 @@ function DetailsCard() {
         <div className="first-section">
           {!pokemon.previd ? (
             <a>
-              <Link to={`/`}>
+              <Link to={`/home`}>
                 <img src="/icons/arrow_back.svg"></img>
               </Link>
             </a>
@@ -112,7 +112,7 @@ function DetailsCard() {
           </div>
           <h3 className="stats-title">Base Stats</h3>
           <div className="progress-bar">
-            <div>
+            <div className="status">
               <h5>HP</h5>
               <h5>ATK</h5>
               <h5>DEF</h5>

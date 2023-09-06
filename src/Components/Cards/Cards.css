@@ -31,7 +31,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins";}
+  
+}
 
 .card-list-pokemon {
   display: flex;
@@ -42,11 +43,13 @@
   padding: 10px;
   gap: 9px;
   z-index: 0;
+  font-family: "Poppins";
 }
 
 
 main{
   position: relative;
+  font-family: "Poppins";
 }
 
 .card-pokemon {

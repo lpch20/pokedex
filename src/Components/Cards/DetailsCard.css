@@ -1,11 +1,12 @@
+
 .body-card-bg{
     padding: 4px;
     background: url(/icons/pokeball.svg);
     background-position: 95% 2%;
     background-repeat: no-repeat;
     background-size: 230px;
-    height: 100vh
-  
+    height: 100vh;
+    font-family: "Poppins";
 }
 
 /* FIRST SECTION */
@@ -171,6 +172,10 @@
     justify-content: center;
 }
 
+.status{
+    margin-top: 5px;
+}
+
 .progress-bar .progress-stats{
     display: flex;
     flex-direction: column;
@@ -195,6 +200,7 @@ progress[value]{
     text-align: end;
     padding: 2rem 0.5rem;
     width: 100%;
+    padding-left: 20px;
 }
 
 .progress-bar hr{

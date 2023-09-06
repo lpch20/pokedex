@@ -1,6 +1,7 @@
 .search-bar {
   display: flex;
   flex-direction: column;
+  font-family: "Poppins";
 }
 
 .pokedex-bar {
@@ -43,6 +44,7 @@
   padding: 8px;
   font-size: 16px;
   outline: none;
+  font-family: "Poppins";
 }
 
 .bar-and-filter {
