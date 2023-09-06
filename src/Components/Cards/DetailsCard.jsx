@@ -1,6 +1,7 @@
 import "./DetailsCard.css";
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
+import 'animate.css';
 
 function DetailsCard() {
   const [pokemon, setPokemon] = useState("");
@@ -62,7 +63,7 @@ function DetailsCard() {
                   <img src="/icons/chevron_left.svg"></img>
                 </Link>
               </a>
-              <img src={pokemon.image}></img>
+              <img className="animate__animated animate__flip" src={pokemon.image}></img>
               <a
                 href=""
                 style={{ visibility: !pokemon.nextid ? "hidden" : "visible" }}

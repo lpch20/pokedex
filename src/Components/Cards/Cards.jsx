@@ -3,6 +3,7 @@ import "./Cards.css";
 import "../../index.css";
 import { Link } from "react-router-dom";
 
+
 function Cards({ filterPokemon, nameChecked }) {
   const [pokemons, setPokemons] = useState([]);
 
@@ -32,20 +33,21 @@ function Cards({ filterPokemon, nameChecked }) {
     <div className="card-list-pokemon ">
       {filterPokemon.map((pokemon) => (
         <main key={pokemon.id} className="container">
-          <a href="#" className="card-pokemon">
+          <a  href="#" className="card-pokemon">
             <Link to={`/profile/${pokemon.id}`}>
-            <div className={`card-img ${
+              <div data-aos="zoom-in"
+                className={`card-img ${
                   nameChecked === "Name" ? "card-img-name" : ""
                 }`}
               >
-              <div className="pokemon-id">
-                <span>#{pokemon.id}</span>
+                <div className="pokemon-id">
+                  <span>#{pokemon.id}</span>
+                </div>
+                <img  src={pokemon.image} alt="pokemon" />
+                <div className="card-name">
+                  <p>{pokemon.name}</p>
+                </div>
               </div>
-              <img src={pokemon.image} alt="pokemon" />
-              <div className="card-name">
-                <p>{pokemon.name}</p>
-              </div>
-            </div>
             </Link>
           </a>
         </main>
