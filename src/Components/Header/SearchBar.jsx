@@ -1,6 +1,7 @@
 import Cards from "../Cards/Cards";
 import "./searchbar.css";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 import iconNumber from "/icons/tag.svg";
 import iconName from "/icons/text_format.svg";
@@ -112,8 +113,15 @@ function SearchBar() {
   return (
     <div className="search-bar">
       <div className="pokedex-bar">
-        <img src="/icons/pokeballMain.svg" alt="" />
-        <h1>Pokédex</h1>
+        <div className="pokedex-div">
+          <img src="/icons/pokeballMain.svg" alt="" />
+          <h1>Pokédex</h1>
+        </div>
+        <div className="log-out">
+          <a href="">
+            <Link to="/">Log out</Link>
+          </a>
+        </div>
       </div>
       <div className="bar-and-filter">
         <div className="pokedex-search">
@@ -193,7 +201,6 @@ function SearchBar() {
         ) : null}
       </div>
       <Cards filterPokemon={filterPokemon} nameChecked={checked} />
-     
     </div>
   );
 }

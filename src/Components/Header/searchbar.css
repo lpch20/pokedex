@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   flex-direction: row;
-
+  justify-content: space-between;
   padding-top: 1rem;
   padding-left: 1.2rem;
 }
@@ -21,6 +21,29 @@
 .pokedex-bar h1 {
   margin-left: 10px;
   color: #ffffff;
+}
+
+.pokedex-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.log-out{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.log-out a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.log-out a:hover{
+  color: #666666;
 }
 
 .pokedex-search {
