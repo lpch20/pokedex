@@ -115,7 +115,7 @@ function Login() {
                 </div>
                 <button
                   className="login"
-                  disabled={!isValidEmail || !isValidPassword}
+                  disabled={email === "" || password === "" ? true : false}
                 >
                   Confirm
                 </button>
