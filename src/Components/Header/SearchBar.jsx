@@ -87,7 +87,7 @@ function SearchBar() {
   };
 
   useEffect(() => {
-    fetch("http://localhost:3000/pokemon", requestOptions)
+    fetch("https://poke-json-wine.vercel.app/pokemon", requestOptions)
       .then((response) => response.json())
       .then((data) => {
         setAllPokemon(data);

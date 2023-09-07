@@ -15,7 +15,7 @@ function Cards({ filterPokemon, nameChecked }) {
   const getPokemons = async () => {
     try {
       const response = await fetch(
-        `http://localhost:3000/pokemon`,
+        `https://poke-json-wine.vercel.app/pokemon`,
         requestOptions
       );
       const data = await response.json();
